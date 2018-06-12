@@ -1,0 +1,88 @@
+@font-face{
+	font-family: 'Lato', sans-serif;
+	src:url('../fonts/Lato-Regular.ttf'),;
+	font-weight: normal;
+	font-style: normal;
+}
+
+					/*	GLOBAL SETTINGS*/
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	line-height: 1.2;	
+	position: relative;
+
+}
+
+* { box-sizing:border-box;}
+
+/* все элементы наследуют значение свойства 
+у родительского элемента*/
+
+ul, ol{
+	list-style-type:none;
+}
+
+a{
+	color:rgba(255, 255, 255, 0.8);
+	text-decoration: underline;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+/*.container{
+	max-width: 1170px;
+	margin:auto;
+}
+*/
+
+							/* HEADER START */
+
+.header{
+	position: absolute;
+	width:100%;/*расстянуть на всю ширину экрана*/
+	display: flex;
+	padding: 0 10%;
+
+}
+
+
+.logo{
+	width: 129px;/*посмотрел размеры самой картинки*/
+	height: 108px;/*посмотрел размеры самой картинки*/
+}
+
+.logo__img{
+	width: 100%;/*изображение всегда будет подстраиваться под размер логотипа*/
+
+}
+
+/*тк header-у указали flex, то в нем сдвинем меню к самому краю хеадара вправо*/
+.menu{
+	margin-left:auto;/*сдвигаем вправо максимально прижат к краю хедара */
+
+}
+
+.menu__list{
+	display: flex;/*выровним горизонтально item-ы меню*/
+	list-style: none;
+	margin:0;/*сброс отступов от Normalize*/
+	padding:0;/*сброс отступов от Normalize*/
+}
+
+.men__item{
+
+	
+}
+
+
+
+.main{
+	background-image: url('../images/bg.jpg');
+	height:100vh;/*развернем секцию на весь экран (будет занимать 100% от окна Браузера)*/
+	background-size: cover;/*масштабируем фоновое изображение в зависимости отокна Браузера*/
+
+}
