@@ -39,7 +39,7 @@ a:hover{
 }
 */
 
-							/* HEADER START */
+					/* HEADER START */
 
 .header{
 	position: absolute;
@@ -48,7 +48,6 @@ a:hover{
 	padding: 0 10%;
 
 }
-
 
 .logo{
 	width: 129px;/*посмотрел размеры самой картинки*/
@@ -68,21 +67,45 @@ a:hover{
 
 .menu__list{
 	display: flex;/*выровним горизонтально item-ы меню*/
+	align-items: center;/*вертикально выровним item-ы меню*/
 	list-style: none;
 	margin:0;/*сброс отступов от Normalize*/
 	padding:0;/*сброс отступов от Normalize*/
+	height:100%;/*задали высоту, чтобы отцентрировать список item-ов.до этого - высота ограничивалась высотой текста и не центрировалась*/
+
+
 }
 
-.men__item{
-
+.menu__item{
+	margin-right:30px;/*отступы м/у пунктами меню*/
+	color:rgba(255, 255, 255, 0.8);
 	
 }
+.menu__link{
+	text-transform: uppercase;
+	text-decoration: none;
 
+}
 
+					/* MAIN section START*/
 
 .main{
 	background-image: url('../images/bg.jpg');
 	height:100vh;/*развернем секцию на весь экран (будет занимать 100% от окна Браузера)*/
 	background-size: cover;/*масштабируем фоновое изображение в зависимости отокна Браузера*/
+	color:white;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.main__title{
+	font-family: 'Times New Roman';
+	font-size:2.25rem;/*36px*/
+	font-weight:bold;
+	font-style: italic;
 
 }
