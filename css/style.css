@@ -25,12 +25,14 @@ ul, ol{
 }
 
 a{
-	color:rgba(255, 255, 255, 0.8);
+	color:rgba(255, 255, 255, 0.8); /*прозрачность*/
 	text-decoration: underline;
+	transition: color 0.2s linear;
 }
 
 a:hover{
 	text-decoration: none;
+	color: white;
 }
 
 /*.container{
@@ -107,5 +109,52 @@ a:hover{
 	font-size:2.25rem;/*36px*/
 	font-weight:bold;
 	font-style: italic;
+	text-align: center;
+	letter-spacing: 1.8;
+	
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	margin-bottom: 40px;
+	color:rgba(255, 255, 255, 0.8); /*прозрачность текста*/
+
+
+}
+
+.main__title-big{
+	font-family: 'Lato', sans-serif;
+	font-size:6.25rem; /*100px*/
+	font-weight: 700;
+	text-transform: uppercase;
+	font-style: normal;
+	color: white;
+	
+	display: block;
+	
+}
+
+.main__button{
+	color:  #ffffff;
+	font-size: 1.1rem;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	width: 280px;
+	height: 68px;
+	border:3px solid white;
+	border-radius: 3px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 40px;
+
+}
+
+.main__description{
+
+font-size: 14px;
+line-height: 30px;
+text-transform: uppercase;
+color:rgba(255, 255, 255, 0.8); /*прозрачность текста*/
 
 }
